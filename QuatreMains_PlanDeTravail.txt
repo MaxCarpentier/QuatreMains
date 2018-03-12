@@ -1,0 +1,79 @@
+1. ÉNONCÉ :
+Augmentation des capacités sonores du piano par traitement en temps réel.
+
+1.1 DESCRIPTION :
+Ce programme mettra en place une série de traitements sonores audionumériques en temps réel ayant pour but de magnifier les possibilités expressives et timbrales du piano (instrument de musique augmenté.)
+En vue d'être utilisé dans le cadre d'une performance "à quatre mains" pour pianiste et son alter-égo virtuel sur piano mécanique (Yamaha Disklavier), ce projet s'inscrit dans la lignée d'une démarche de plus grande envergure où un autre programme a déjà été élaboré dans MAX pour permettre au piano mécanique d'accompagner en temps réel le jeu du pianiste. Les différents processus de manipulation des notes MIDI ayant déjà été mis en place, il sera donc question ici de tout ce qui se passe après que le signal acoustique du piano ait été capté par les microphones.
+Dans un souci de cohérence esthétique, ces manipulations pilotées par ordinateur se voudront réactives au jeu de l'interprète ainsi qu'à l'interaction entre celui-ci et son alter-égo, en plus d'être fermement ancrées dans "l'univers sonore" du piano. Pour ce faire, seront privilégiés les effets adaptatifs, les traitements dans le domaine spectral ainsi que les méthodes de synthèse permettant d'utiliser la matière même du piano comme base pour la génération du son.
+Le tout prendra la forme d'une application autonome capable de communiquer avec le patch MAX déjà réalisé (par exemple, pour suivre l'évolution temporelle de la performance en cours ou encore récupérer l'état actuel des différents paramètres de la "chaine de traitements MIDI" pour réagir en conséquence.)
+
+2. ANALYSE DES BESOINS :
+Analyse et récupération de données sur le signal :
+Le signal audio d'entrée devra être analysé en temps réel (ex.: analyse spectrale, suivi d'amplitude, détection des attaques, suivi de la hauteur, centroide de spectre etc.), puisque ces données seront récupérées pour le contrôle interactif des différents paramètres d'effets. Il se peut que certaines de ces analyses soient remplacées ou affinées par la récupération des informations sur les notes MIDI provenant du patch MAX (correspondances vélocité/amplitude, numéro de note/hauteur, note on/attaque etc.)
+Mappage : 
+Les données ainsi obtenues devront être filtrées, uniformisées, puis mappées dynamiquement au contrôle des différents processus audio de manière à tirer un maximum de réactivité de la part du système (ce qui impliquera probablement l'utilisation de mappages complexes "1 pour n".)
+Communication entre les 2 applications :
+Le programme devra pouvoir communiquer avec le patch MAX mentionné plus tôt, principalement pour être en mesure de suivre l'évolution formelle au sein d'une performance donnée en réagissant en direct à l'état actuel du patch.
+Chaines de traitements :
+Les processus mis en place devront toujours avoir pour but de permettre au piano de faire des choses qui lui étaient impossibles auparavant (ex.: vibrato, tremolo, sons filés, étirement et dilatation temporelle, extension de l'ambitus fréquentiel jusque dans l'extrême-aigu et l'extrême-grave, production de timbres inouïs, multiplication et épaississement démesuré de la matière etc.) Bien sûr, l’exploration de différents traitements permettra de sélectionner ceux qui s’avèrent les plus pertinents et concluants dans le cadre du projet.
+
+3. ACQUISITION DES CONNAISSANCES :
+Comprovisation :
+-	Agône : un outil adapté à une démarche de création en comprovisation électroacoustique - Jullian Hoff 
+-	https://jullianhoff.wordpress.com/hyperguitare-2/ (exemples vidéos de performances utilisant une guitare électrique augmentée pour piloter divers processus audio ex. : granulateur)
+Effets audio adaptatifs :
+-	Des contrôles intelligents pour les effets audionumériques adaptatifs - Vincent Verfaille (publication complète sur le sujet)
+-	Effets audionumériques adaptatifs : théorie, mise en œuvre et usage en création musicale numérique - Vincent Verfaille (plus court article)
+Piano augmenté :
+-	Models of Interaction in Works for Piano and Live Electronics - Xenia Pestova 
+Manipulations dans le domaine spectral avec MAX/MSP/Jitter :
+-	The Phase Vocoder - Part I - Richard Dudas, Cort Lippe 
+-	The Phase Vocoder - Part II - Richard Dudas, Cort Lippe
+-	A Tutorial On Spectral Sound Processing Using Max/MSP and Jitter - Jean-François Charles (exemples d’effets spectraux comme le « freeze » en realtime, discussion sur le « frame effect », utilisation de « blur » stochastique dans le resynthèse pour l’enrayer, préservation des transitoires d’attaque, vitesse de lecture proportionnelle à la valeur de transitoire)
+Tutoriels MAX/MSP : 
+-	MSP Tutorial 10 - Vibrato and FM
+-	MSP Tutorial 12 – Waveshaping
+-	MSP Tutorial 15 - Variable-length Wavetable
+-	MSP Tutorial 21 - Using the poly~ Object
+-	MSP Tutorial 25 - Using the FFT
+-	MSP Tutorial 26 - Frequency Domain Signal Processing with pfft~
+-	MSP Compression Tutorial 8 - Microsounds (exemple de processus pour amplifier des sons très doux, résonnances internes du piano etc. par de la compression appliquée seulement aux signaux dont le niveau sonore est sous un certain seuil prédéterminé)
+Communication entre plusieurs applications (MAX et Python) :
+-	Pyo API documentation - Open Sound Control (catégorie de classes permettant d'envoyer et de recevoir des données en OSC de ou vers Python)
+-	MAX Communications Tutorial 3 - UDP Networking https://docs.cycling74.com/max7/tutorials/communicationschapter03 (objets udpsend et udpreceive permettent la communication réseau, remplacent les objets externes de CNMAT qui ne sont plus nécessaires)
+Documentation Pyo, catégories de classes à étudier :
+-	Section Audio Signal Analysis
+-	Section Fast Fourier Transform
+-	Section Phase Vocoder
+-	Section Open Sound Control
+-	Section Table Processing
+-	Section Value Converters (SLMAP)
+Exemples de code dans Python avec Pyo à étudier :
+-	FFT : 04_fft_gate.py
+-	FFT : 05_fft_delay.py
+-	FFT : 06_fft_vectral.py
+-	FFT : 07_fft_stretch.py
+Factorisation de Matrices (dans Max) :
+-	https://medias.ircam.fr/x520ca1 (permettrait des manipulations de plus "haut-niveau", mais plus complexe à rendre "real-time".)
+
+4. MODÈLE :
+On pourrait simplifier le processus en parlant ici d'un modèle : "analyse-transformations-resynthèse" élargi.
+L'étape d'analyse consiste tout d'abord en l'acquisition de données sur le signal dans le domaine temporel (comme les variations d'amplitude qui peuvent être obtenues grâce à un suiveur d’enveloppe, par exemple) ainsi que dans le domaine fréquentiel grâce à l'application d'une Transformée de Fourier Rapide (FFT) permettant la conversion du signal de base en ses composantes spectrales.
+Les transformations, quant à elles, peuvent prendre la forme de manipulations effectuées sur les différents "bins" de fréquences  ainsi obtenus (modulation d’amplitude ou de fréquence, « gating », délai, « freeze », altération de la vitesse de lecture, synthèse croisée, « morphing » etc. sont des exemples d’effets sujets à exploration) ou encore de manipulations sur le signal dans le domaine temporel (par granulation, par exemple.) Ces transformations se voulant adaptatives, l’évolution des différents paramètres d’effets est asservie aux variations dans le temps de divers descripteurs audio issus de l’analyse en temps réel du signal entrant.
+La resynthèse finale est effectuée par l'application d'une Transformée de Fourier Rapide Inverse (IFFT) au signal, permettant de reconvertir celui-ci vers le domaine temporel pour être en mesure de l'entendre.
+
+5. MÉTHODES:
+Analyse et récupération de données sur le signal :
+Une classe audio permettra de centraliser l'ensemble des analyses effectuées sur le signal entrant de manière aussi efficace et élégante que possible. En sortie de cette classe (qui ne sera utilisée qu’une seule fois dans le programme, mais qui sera très pratique pour de futurs projets semblables!) pourra être récupérée la variation, au taux audio, de chacun des descripteurs analysés (le tout normalisé entre 0 et 1 et ramené sur une échelle linéaire ou logarithmique selon le cas, dans l’optique de faciliter le mappage à des ambitus variés par la suite.) Pour procéder aux analyses seront implémentés différents modules, tels qu’un suiveur d’enveloppe avec contrôle de la sensibilité (filtrage passe-bas) ainsi qu’un calculateur de centroide de spectre (pour les autres descripteurs, comme la hauteur des notes ou encore la vélocité des attaques, des tests seront faits pour déterminer s’il est plus pertinent d’analyser le signal audio ou MIDI provenant du piano, puis les modules appropriés seront implémentés en conséquence.) Il sera aussi possible de récupérer, en sortie de la classe, l’analyse effectuée par un vocodeur de phase sur le signal audio entrant à des fins de traitement dans le domaine spectral.
+Mappage :
+Les signaux audio de contrôle normalisés obtenus à l’étape de l’analyse seront ensuite utilisés pour moduler dynamiquement les paramètres des différents effets en étant tout d’abord ramenés mathématiquement à l’ambitus désiré (selon la nature du paramètre à moduler), puis en étant passés en argument de l’effet ciblé.
+Enregistrement : 
+Une classe audio contiendra un système déclenchant automatiquement l'enregistrement du signal audio entrant dans un espace mémoire (stéréo)  lorsque l'amplitude de celui-ci se trouve au-dessus d'un seuil d'intensité prédéterminé (évitant ainsi d'enregistrer du silence ou du bruit de fond inutile.) Cette matière sonore enregistrée en permanence sera alors stockée et accessible par les processus qui pourraient avoir besoin d’une « banque d’échantillons » dans laquelle piger (comme c’est le cas pour un granulateur, par exemple.) N.B. : Il se peut que cette section ne soit pas nécessaire si aucun traitement utilisé au final ne nécessite une telle « banque d’échantillons ».
+Manipulations et synthèse (chaines de traitements) :
+En suivant le modèle élaboré précédemment et en expérimentant avec divers procédés de transformation sonore visant à répondre au besoin de « permettre au piano de faire des choses qui lui étaient impossibles auparavant », diverses chaines de traitements ayant chacune une fonction précise (ex. : produire du vibrato expressif) seront mises en place, puis encapsulées dans une classe pour pouvoir être réutilisées aisément. Pour ce qui est des processus se déroulant dans le domaine temporel, ils prendront simplement le signal provenant des microphones en entrée et produiront un signal audio standard en sortie. En ce qui a trait aux chaines de traitements dans le domaine fréquentiel, elles prendront toutes en entrée le même signal provenant de la sortie « vocodeur de phase » de la classe d’analyse détaillée plus tôt (évitant ainsi une démultiplication inutile des calculs.) Par contre, à la fin de chacune des chaines de manipulations dans le domaine spectral, un vocodeur de phase sera implémenté pour permettre la resynthèse du signal transformé. Ainsi, l’amplitude de chaque instance de resynthèse pourra être variée dans le temps indépendamment des autres, permettant non-seulement  le mixage dynamique des différentes chaines d’effets, mais aussi l’élaboration d’une progression formelle cohérente au sein de la performance.
+Communication entre les 2 applications :
+Les deux applications utiliseront un port réseau (UDP) pour communiquer entre elles grâce au protocole Open Sound Control (OSC) (sauf bien sûr si les deux programmes s’avèrent être développés dans le même environnement, auquel cas les valeurs pourront être envoyées directement d’un processus à l’autre.)
+
+6. IMPLÉMENTATION :
+
+7. TEST ET MAINTENANCE :
