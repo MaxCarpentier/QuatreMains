@@ -1,0 +1,9 @@
+1, "Commençons (réchauffez-vous!)";
+2, "Apprenez à vous connaitre.";
+3, "Regardez-vous dans le miroir.";
+4, Feedback!;
+5, Arrêtez!;
+6, ran 3 5 "Choisissez $1 notes.";
+7, "Jouez avec Jean.";
+8, ton "Jouez dans la tonalité de $1 $2.";
+9, "Jouez des clusters."
