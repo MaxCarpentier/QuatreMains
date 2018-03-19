@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 1852.0, 929.0 ],
+		"rect" : [ 42.0, 85.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,35 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 16.0, 23.11087, 41.0, 20.0 ],
+					"style" : "",
+					"text" : "target"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 21.5, 45.11087, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
+					"style" : "",
+					"text" : "in 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-92",
 					"maxclass" : "newobj",
@@ -161,13 +190,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1106.25, 1167.0, 30.0, 22.0 ],
+					"patching_rect" : [ 1106.25, 1167.0, 37.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"attr_comment" : ""
 					}
 ,
 					"style" : "",
-					"text" : "in 9"
+					"text" : "in 10"
 				}
 
 			}
@@ -184,7 +213,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "in 8"
+					"text" : "in 9"
 				}
 
 			}
@@ -201,7 +230,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "in 7"
+					"text" : "in 8"
 				}
 
 			}
@@ -218,7 +247,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "in 6"
+					"text" : "in 7"
 				}
 
 			}
@@ -235,7 +264,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "in 5"
+					"text" : "in 6"
 				}
 
 			}
@@ -252,7 +281,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "in 4"
+					"text" : "in 5"
 				}
 
 			}
@@ -269,7 +298,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "in 3"
+					"text" : "in 4"
 				}
 
 			}
@@ -286,7 +315,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "in 2"
+					"text" : "in 3"
 				}
 
 			}
@@ -315,7 +344,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "in 1"
+					"text" : "in 2"
 				}
 
 			}
@@ -378,6 +407,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1039.5, 1401.0, 40.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out 1"
 				}
@@ -1953,8 +1986,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1972,8 +2005,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
