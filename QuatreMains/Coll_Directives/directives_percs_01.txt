@@ -1,0 +1,4 @@
+0, "Enclenchez le toggle pour débuter.";
+1, "Effectuez la calibration.";
+2, Commençons.;
+3, "La performance commencerait à ce moment-là.";
