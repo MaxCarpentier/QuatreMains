@@ -2,3 +2,4 @@
 1, "Effectuez la calibration.";
 2, Commençons.;
 3, "La performance commencerait à ce moment-là.";
+4, "Ceci est un test.";
