@@ -9,6 +9,8 @@ Objet bonk~ : https://github.com/v7b1/bonk_64bit-version/releases
 Libraires Bach et Cage : http://www.bachproject.net/dl/
 Librairie d'objets ROLI BLOCKS : https://cycling74.com/feature/roliblocks
 ```
+### N.B.:
+Le patch principal à ouvrir est toujours ''QuatreMains_Percs'', contenant énormément d'objets personnels (mx.objets) développés dans le cadre du projet.
 
 ### Contact:
 N'hésitez pas à m'écrire si vous avez des questions au : maxime.carpentier95@hotmail.com.
