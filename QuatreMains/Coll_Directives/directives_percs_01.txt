@@ -1,5 +1,8 @@
 0, "Enclenchez le toggle pour débuter.";
-1, "Effectuez la calibration.";
+1, "Effectuez la calibration des micros contact.";
 2, Commençons.;
-3, "La performance commencerait à ce moment-là.";
-4, "Ceci est un test.";
+3, "Essayez de taper sur les blocs colorés.";
+4, "Et hop! Un peu de délai sur la caisse claire.";
+5, "Appuyez dans le grand carré bleu durant les échos.";
+6, "Que se passe-t-il si vous exercez plus de pression?";
+7, "Et si vous bougez votre doigt de bas en haut?";
