@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 1443.0, 929.0 ],
+		"rect" : [ 42.0, 85.0, 1443.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -165,7 +165,7 @@
 					"patching_rect" : [ 1344.5, 446.0, 115.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"name" : "1044ma_delta",
+						"name" : "1054ma_delta",
 						"parameter_enable" : 0,
 						"range" : 128,
 						"showeditor" : 0,
@@ -303,7 +303,7 @@
 					"patching_rect" : [ 958.5, 448.0, 106.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"name" : "1044ma_dur",
+						"name" : "1054ma_dur",
 						"parameter_enable" : 0,
 						"range" : 128,
 						"showeditor" : 0,
@@ -341,7 +341,7 @@
 					"patching_rect" : [ 671.5, 448.0, 104.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"name" : "1044ma_vel",
+						"name" : "1054ma_vel",
 						"parameter_enable" : 0,
 						"range" : 128,
 						"showeditor" : 0,
@@ -379,7 +379,7 @@
 					"patching_rect" : [ 359.0, 448.0, 114.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"name" : "1044ma_pitch",
+						"name" : "1054ma_pitch",
 						"parameter_enable" : 0,
 						"range" : 128,
 						"showeditor" : 0,
@@ -1960,8 +1960,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

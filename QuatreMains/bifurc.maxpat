@@ -161,7 +161,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1043",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
