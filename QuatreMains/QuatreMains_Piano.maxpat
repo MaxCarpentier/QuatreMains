@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 81.0, 1283.0, 921.0 ],
+		"rect" : [ 42.0, 85.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,9 +43,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 925.976196, 2329.0, 274.0, 20.0 ],
+					"patching_rect" : [ 914.397339, 2353.0, 274.0, 20.0 ],
 					"style" : "",
-					"text" : "ÉTAIT MARKOV AVANT (ONT ÉTÉ ÉCHANGÉS)"
+					"text" : "TESTER V2 (SINON REMETTRE TABLES)"
 				}
 
 			}
@@ -57,7 +57,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 503.792542, 1866.333374, 266.316467, 20.0 ],
 					"style" : "",
-					"text" : "ÉTAIT TABLES AVANT (ONT ÉTÉ ÉCHANGÉS)"
+					"text" : "ÉCHANGER AVEC MARKOV SI BUG"
 				}
 
 			}
@@ -239,7 +239,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 11.0, 209.0, 1829.642334, 119.0 ],
 					"style" : "",
-					"text" : "fait",
+					"text" : "\"Apprenez à vous connaitre.\"",
 					"textjustification" : 1,
 					"varname" : "DirectiveAffichage[1]"
 				}
@@ -6857,7 +6857,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-249",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -8845,7 +8844,7 @@
 
 					}
 ,
-					"size" : 19.0,
+					"size" : 1.0,
 					"style" : "",
 					"varname" : "re_rslider_01"
 				}
@@ -8886,7 +8885,7 @@
 
 					}
 ,
-					"size" : 20.0,
+					"size" : 1.0,
 					"style" : "",
 					"varname" : "re_rslider_02"
 				}
@@ -17696,7 +17695,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-845",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -22697,11 +22695,11 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 57.202515, 3461.0, 112.046875, 90.792969 ],
-					"presentation_rect" : [ 0.0, 0.0, 112.046875, 90.792969 ],
+					"patching_rect" : [ 57.202515, 3461.0, 892.550781, 90.792969 ],
+					"presentation_rect" : [ 0.0, 0.0, 892.550781, 90.792969 ],
 					"rounded" : 33.0,
 					"style" : "",
-					"text" : "fait",
+					"text" : "Apprenez à vous connaitre.",
 					"varname" : "DirectiveAffichage"
 				}
 
@@ -23420,7 +23418,7 @@
 					"style" : "newobjBlue-1",
 					"subscribe" : [ "bifurc_matrix", "forme::bifurc_matrix" ],
 					"text" : "pattrstorage @autorestore 0",
-					"varname" : "u458004433"
+					"varname" : "u633004431"
 				}
 
 			}
@@ -23509,7 +23507,7 @@
 						"INSTANCE_re" : [ 2 ],
 						"INSTANCE_ta" : [ 2 ],
 						"MidiInputDevice" : [ 0 ],
-						"MidiOutputDevice" : [ 2 ],
+						"MidiOutputDevice" : [ 1 ],
 						"OpenInstance_Dt" : [ 1 ],
 						"OpenInstance_Fb" : [ 1 ],
 						"OpenInstance_Gr" : [ 1 ],
@@ -23533,14 +23531,14 @@
 						"fb_upinterval[1]" : [ 3 ],
 						"fb_upvelchange" : [ -24 ],
 						"forme_NumNotesHeld" : [ 0 ],
-						"forme_TempsDepuisDebut" : [ 2201000 ],
+						"forme_TempsDepuisDebut" : [ 326000 ],
 						"forme_cc64" : [ 0 ],
 						"forme_cc66" : [ 0 ],
 						"forme_cc67" : [ 0 ],
-						"forme_clocker" : [ 243710 ],
-						"forme_compte" : [ 861 ],
-						"forme_vel" : [ 44 ],
-						"forme_vel[1]" : [ 65 ],
+						"forme_clocker" : [ 79410 ],
+						"forme_compte" : [ 58 ],
+						"forme_vel" : [ 47 ],
+						"forme_vel[1]" : [ 62 ],
 						"gr_Attack" : [ 10.0 ],
 						"gr_PitchDir" : [ 0.0 ],
 						"gr_PitchVar" : [ 8.0 ],
@@ -23556,8 +23554,8 @@
 						"gr_veladd" : [ 16 ],
 						"gswitch2" : [ 0 ],
 						"gswitch2[2]" : [ 0 ],
-						"gswitch2[4]" : [ 1 ],
-						"gswitch2[8]" : [ 1 ],
+						"gswitch2[4]" : [ 0 ],
+						"gswitch2[8]" : [ 0 ],
 						"je_detection_toggle[1]" : [ 0 ],
 						"je_detection_toggle[2]" : [ 0 ],
 						"je_play_toggle[1]" : [ 0 ],
@@ -23587,10 +23585,10 @@
 						"pedal_toggle[7]" : [ 0 ],
 						"pedal_toggle[8]" : [ 0 ],
 						"pedal_toggle[9]" : [ 0 ],
-						"preset_recall" : [ 141.0 ],
+						"preset_recall" : [ 2.0 ],
 						"preset_store" : [ 147 ],
-						"quantize_amount" : [ 100 ],
-						"quantize_toggle" : [ 1 ],
+						"quantize_amount" : [ 0 ],
+						"quantize_toggle" : [ 0 ],
 						"radiogroup" : [ 0, 0 ],
 						"radiogroup[100]" : [ 0, 0 ],
 						"radiogroup[101]" : [ 0, 0 ],
@@ -23738,11 +23736,11 @@
 						"re_play_toggle[2]" : [ 0 ],
 						"re_playtype[1]" : [ 2 ],
 						"re_playtype[2]" : [ 0 ],
-						"re_rslider_01" : [ 0.0, 2.870255 ],
+						"re_rslider_01" : [ 0.0, 1.0 ],
 						"re_rslider_02" : [ 0.0, 1.0 ],
 						"re_veladd[1]" : [ 0 ],
-						"scale_amount" : [ 100 ],
-						"scale_applic_toggle" : [ 1 ],
+						"scale_amount" : [ 0 ],
+						"scale_applic_toggle" : [ 0 ],
 						"scale_detect_toggle" : [ 0 ],
 						"scale_len" : [ 5 ],
 						"seq_loop_toggle" : [ 0 ],
@@ -23759,13 +23757,13 @@
 						"tempo_detect_toggle" : [ 0 ],
 						"uz_go_toggle" : [ 0 ],
 						"uz_go_toggle[1]" : [ 0 ],
-						"uz_vel" : [ 65 ],
+						"uz_vel" : [ 35 ],
 						"uz_vel[1]" : [ 35 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr @autoname 1",
-					"varname" : "u878006977"
+					"varname" : "u263006975"
 				}
 
 			}
@@ -25710,9 +25708,9 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 807.792603, 2329.0, 114.0, 22.0 ],
+					"patching_rect" : [ 807.792603, 2329.0, 140.0, 22.0 ],
 					"style" : "",
-					"text" : "poly~ tables_poly 2"
+					"text" : "poly~ markov_poly_v2 2"
 				}
 
 			}
@@ -26735,9 +26733,9 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.292603, 1866.333374, 121.0, 22.0 ],
+					"patching_rect" : [ 380.292603, 1866.333374, 114.0, 22.0 ],
 					"style" : "",
-					"text" : "poly~ markov_poly 2"
+					"text" : "poly~ tables_poly 2"
 				}
 
 			}
@@ -34057,7 +34055,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 646.75, 262.539795, 154.0, 23.0 ],
 									"style" : "",
-									"text" : "65"
+									"text" : "62"
 								}
 
 							}
@@ -37027,7 +37025,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-83",
-					"items" : [ "VirtualMIDISynth #1", ",", "Microsoft GS Wavetable Synth", ",", "Yamaha USB-MIDI-1" ],
+					"items" : [ "VirtualMIDISynth #1", ",", "Microsoft GS Wavetable Synth", ",", "Launchkey MIDI", ",", "MIDIOUT2 (Launchkey MIDI)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -37097,7 +37095,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-86",
-					"items" : "Yamaha USB-MIDI-1",
+					"items" : [ "Launchkey MIDI", ",", "MIDIIN2 (Launchkey MIDI)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -39144,7 +39142,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-695", 4 ],
-					"midpoints" : [ 737.609009, 1851.0, 491.792603, 1851.0 ],
+					"midpoints" : [ 737.609009, 1851.0, 484.792603, 1851.0 ],
 					"source" : [ "obj-1010", 0 ]
 				}
 
@@ -44400,7 +44398,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-695", 3 ],
-					"midpoints" : [ 604.109009, 1851.0, 466.292603, 1851.0 ],
+					"midpoints" : [ 604.109009, 1851.0, 461.042603, 1851.0 ],
 					"source" : [ "obj-832", 0 ]
 				}
 
@@ -44416,7 +44414,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-695", 4 ],
-					"midpoints" : [ 694.609009, 1851.0, 491.792603, 1851.0 ],
+					"midpoints" : [ 694.609009, 1851.0, 484.792603, 1851.0 ],
 					"source" : [ "obj-833", 0 ]
 				}
 
@@ -45247,7 +45245,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-695", 3 ],
-					"midpoints" : [ 649.109009, 1851.0, 466.292603, 1851.0 ],
+					"midpoints" : [ 649.109009, 1851.0, 461.042603, 1851.0 ],
 					"source" : [ "obj-966", 0 ]
 				}
 
@@ -45649,21 +45647,21 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-877" : [ "gr_Attack", "Attack", 0 ],
+			"obj-859" : [ "gr_PitchDir", "PitchDir", 0 ],
+			"obj-875" : [ "gr_Release", "Release", 0 ],
 			"obj-1116" : [ "rslider", "rslider", 0 ],
+			"obj-106.2::obj-104" : [ "VoiceStealing[3]", "VoiceStealing", 0 ],
+			"obj-878" : [ "gr_RateMin", "RateMin", 0 ],
+			"obj-861" : [ "gr_PitchVar", "PitchVar", 0 ],
+			"obj-106.1::obj-104" : [ "VoiceStealing[1]", "VoiceStealing", 0 ],
+			"obj-873" : [ "gr_Shape", "Shape", 0 ],
+			"obj-1148" : [ "rslider[1]", "rslider", 0 ],
+			"obj-877" : [ "gr_Attack", "Attack", 0 ],
+			"obj-106.1::obj-106" : [ "Stop[1]", "Stop", 0 ],
 			"obj-879" : [ "gr_RateVar", "RateVar", 0 ],
 			"obj-880" : [ "gr_RateBase", "RateBase", 0 ],
 			"obj-862" : [ "gr_VelVar", "VelVar", 0 ],
-			"obj-859" : [ "gr_PitchDir", "PitchDir", 0 ],
-			"obj-875" : [ "gr_Release", "Release", 0 ],
-			"obj-106.1::obj-104" : [ "VoiceStealing[1]", "VoiceStealing", 0 ],
-			"obj-106.2::obj-106" : [ "Stop[3]", "Stop", 0 ],
-			"obj-878" : [ "gr_RateMin", "RateMin", 0 ],
-			"obj-106.1::obj-106" : [ "Stop[1]", "Stop", 0 ],
-			"obj-1148" : [ "rslider[1]", "rslider", 0 ],
-			"obj-861" : [ "gr_PitchVar", "PitchVar", 0 ],
-			"obj-106.2::obj-104" : [ "VoiceStealing[3]", "VoiceStealing", 0 ],
-			"obj-873" : [ "gr_Shape", "Shape", 0 ]
+			"obj-106.2::obj-106" : [ "Stop[3]", "Stop", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -45744,13 +45742,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "markov_poly.maxpat",
-				"bootpath" : "~/Desktop/Universite/QuatreMains_Master/QuatreMains",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "tables_poly.maxpat",
 				"bootpath" : "~/Desktop/Universite/QuatreMains_Master/QuatreMains",
 				"patcherrelativepath" : ".",
@@ -45758,24 +45749,10 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Ultrasons_Presentation_Piano_01.json",
-				"bootpath" : "~/Desktop/Universite/QuatreMains_Master/QuatreMains/Pattr_Presets",
-				"patcherrelativepath" : "./Pattr_Presets",
+				"name" : "markov_poly_v2.maxpat",
+				"bootpath" : "~/Desktop/Universite/QuatreMains_Master/QuatreMains",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "directives_piano_01.txt",
-				"bootpath" : "~/Desktop/Universite/QuatreMains_Master/QuatreMains/Coll_Directives",
-				"patcherrelativepath" : "./Coll_Directives",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "presets_transfert_piano.txt",
-				"bootpath" : "~/Desktop/Universite/QuatreMains_Master/QuatreMains/Coll_Directives",
-				"patcherrelativepath" : "./Coll_Directives",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
