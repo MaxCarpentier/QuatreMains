@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 517.0, 82.0, 890.0, 920.0 ],
+		"rect" : [ 428.0, 1214.0, 890.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-43",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 550.5, 201.5, 86.0, 62.0 ],
+					"patching_rect" : [ 531.5, 168.5, 86.0, 34.0 ],
 					"style" : "",
-					"text" : "Ajuster comme il faut pour éviter trigs inutiles"
+					"text" : "pour éviter trigs inutiles"
 				}
 
 			}
@@ -56,9 +56,9 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 476.5, 201.5, 72.0, 22.0 ],
+					"patching_rect" : [ 476.5, 201.5, 122.0, 22.0 ],
 					"style" : "",
-					"text" : "quickthresh"
+					"text" : "quickthresh 20 10 20"
 				}
 
 			}
@@ -717,7 +717,7 @@
 						"maskdecay" : 0.7,
 						"masktime" : 4,
 						"minbandwidth" : 1.5,
-						"minvel" : 15.0,
+						"minvel" : 0.0,
 						"nfilters" : 11,
 						"npoints" : 256,
 						"overlap" : 1.0,

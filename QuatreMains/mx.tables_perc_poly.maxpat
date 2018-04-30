@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1046.0, 929.0 ],
+		"rect" : [ 34.0, 1157.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,10 +44,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 14.5, 42.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 1"
 				}
@@ -199,13 +195,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-10",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 70.0, 700.499939, 105.0, 34.0 ],
+					"patching_rect" : [ 35.5, 695.499939, 138.5, 48.0 ],
 					"style" : "",
-					"text" : "2 notes possibles pour l'instant"
+					"text" : "10 notes possibles pour l'instant (modifier table size si on en veut plus!)"
 				}
 
 			}
@@ -217,10 +213,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1007.5, 40.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 5"
 				}
@@ -234,10 +226,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 450.0, 40.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 4"
 				}
@@ -251,10 +239,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 111.5, 42.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 3"
 				}
@@ -280,10 +264,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 63.0, 42.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 2"
 				}
@@ -348,6 +328,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 318.0, 886.0, 40.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out 1"
 				}
@@ -554,7 +538,7 @@
 					"patching_rect" : [ 1101.5, 617.499939, 117.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"name" : "1037deltaprob",
+						"name" : "1046deltaprob",
 						"parameter_enable" : 0,
 						"range" : 128,
 						"showeditor" : 0,
@@ -643,7 +627,7 @@
 					"patching_rect" : [ 492.0, 701.499939, 106.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"name" : "1037velprob",
+						"name" : "1046velprob",
 						"parameter_enable" : 0,
 						"range" : 128,
 						"showeditor" : 0,
@@ -706,7 +690,7 @@
 					"patching_rect" : [ 176.0, 700.499939, 114.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"name" : "1037noteprob",
+						"name" : "1046noteprob",
 						"parameter_enable" : 0,
 						"range" : 128,
 						"showeditor" : 0,
@@ -1308,8 +1292,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

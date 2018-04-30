@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 26.0, 1165.0, 1852.0, 929.0 ],
+		"rect" : [ 42.0, 1165.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -346,10 +346,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 146.0, 49.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 1"
 				}
@@ -476,11 +472,10 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 646.0, 856.0, 171.25, 34.0 ],
+					"patching_rect" : [ 646.0, 862.0, 296.0, 20.0 ],
 					"style" : "",
 					"text" : "Nécessaire pour quand aucune transition possible?"
 				}
@@ -563,10 +558,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1346.5, 49.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 5"
 				}
@@ -580,10 +571,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 726.0, 49.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 4"
 				}
@@ -597,10 +584,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 245.5, 49.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 3"
 				}
@@ -626,10 +609,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 197.0, 49.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 2"
 				}
@@ -694,6 +673,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 591.0, 1009.0, 40.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out 1"
 				}
@@ -1720,8 +1703,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "buttonGreen-1",
 				"default" : 				{
@@ -1761,8 +1742,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
