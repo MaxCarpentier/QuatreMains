@@ -6,3 +6,4 @@
 5, "Appuyez dans le grand carré bleu durant les échos.";
 6, "Que se passe-t-il si vous exercez plus de pression?";
 7, "Et si vous bougez votre doigt de bas en haut?";
+8, line 1000 "Test line";
